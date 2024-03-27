@@ -1,0 +1,11 @@
+{
+    "root": "build/",
+    "clean_urls": false,
+    "routes": {
+      "/**": "index.html"
+    },
+    "staticPaths": {
+      "/static": "static",
+      "/_next": ".next"
+    }
+  }

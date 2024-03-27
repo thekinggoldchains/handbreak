@@ -1,0 +1,217 @@
+.sidebar {
+    width: 100px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #9900cc;
+    white-space: nowrap;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: .35s ease all;
+    border-radius: 0 10px 10px 0;
+
+    .nav {
+        padding: 20px;
+
+        .list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            .item {
+                margin-bottom: 20px;
+                font-size: 16px;
+
+                .link {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: #000;
+                    cursor: pointer;
+
+                    .icon {
+                        margin-right: 10px;
+                        font-size: 32px;
+                        color: #fff;
+                    }
+
+                    .text {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+
+        .link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f6f6f6;
+            }
+
+            .icon {
+                margin-right: 10px;
+                font-size: 24px;
+            }
+
+            .text {
+                flex: 1;
+            }
+        }
+    }
+
+    &:hover {
+        width: 280px;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+
+
+.headerNavDesk {
+    .navItens {
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        position: fixed;
+        white-space: nowrap;
+        z-index: 99;
+        background: #9900cc;
+        color: #fff;
+        border-radius: 0 10px 10px 0;
+        transition: .35s ease all;
+
+        .icons {
+            width: 25px;
+            height: 25px;
+        }
+
+        .sair {
+            position: absolute;
+            bottom: 30px;
+        }
+
+        .logoMenu {
+            transition: .35s ease all;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        .containerTools {
+            opacity: 0;
+        }
+
+        .logoNumber {
+            opacity: 1;
+            width: 70px;
+        }
+
+        .customScroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        &:hover {
+            .logoMenu {
+                opacity: 1;
+            }
+
+            .logoNumber {
+                opacity: 0;
+            }
+            .containerTools {
+                opacity: 1;
+            }
+            width: 280px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px ;
+
+        }
+    }
+}
+.containerMenu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 1;
+    font-family: 'Roboto';
+}
+
+.barContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(0,0,0,.15);
+    border-radius: 20px;
+    height: 30px;
+    padding: 0 10px;
+  }
+  .completedContainerBar {
+    width: 100%;
+    display: flex; 
+    background-color: rgba(0,0,0,.15);
+    height: 15px;
+    border-radius: 20px !important;
+    margin-right: 5px;
+  }
+
+  .progress-barra {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+.progressBarra span {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+  }
+  .infoEspacoContainer {
+    padding: 10px;
+  }
+  .infoEspaco {
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #4f4f4f;
+  }
+  .gerenciarContent {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .gerenciarContent a:active,
+  .gerenciarContent a:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  .gerenciar {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4f4f4f;
+    text-decoration: none;
+  }
+
+  .menuContent {
+    display: flex;
+    flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+    height: auto;
+  }

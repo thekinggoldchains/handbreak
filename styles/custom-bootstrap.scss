@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+
+.btn-warning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ffbe0b;
+    --bs-btn-border-color: #ffbe0b;
+    --bs-btn-hover-color: #FFF;
+    --bs-btn-hover-bg: #ffc830;
+    --bs-btn-hover-border-color: #ffc523;
+    --bs-btn-focus-shadow-rgb: 217, 162, 9;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #ffcb3c;
+    --bs-btn-active-border-color: #ffc523;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #ffbe0b;
+    --bs-btn-disabled-border-color: #ffbe0b;
+}
+
+ul {
+    font-family: 'Roboto' !important;
+}
+
+.modal-body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
